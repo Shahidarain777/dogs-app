@@ -23,6 +23,7 @@ export default function PrimaryButton({ title }: Props) {
           fontWeight: "600",
           paddingVertical: 16,
           color: colors["brown.900"],
+          fontFamily: "Unbounded",
         }}
       >
         {title}

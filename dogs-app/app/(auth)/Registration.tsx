@@ -75,6 +75,7 @@ export default function Registration() {
                 borderRadius: 15,
                 padding: 10,
                 marginHorizontal: 10,
+                fontFamily: "Unbounded",
               }}
             />
           </View>
@@ -92,6 +93,7 @@ export default function Registration() {
                   fontWeight: "600",
                   padding: 10,
                   color: colors["brown.900"],
+                  fontFamily: "Unbounded",
                 }}
               >
                 SEND CONFIRMATION CODE
@@ -155,6 +157,7 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     fontSize: 32,
     color: colors["yellow.200"],
+    fontFamily: "Unbounded",
   },
 
   phone: {
@@ -163,6 +166,7 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     paddingBottom: 10,
     color: colors["yellow.200"],
+    fontFamily: "Unbounded",
   },
 
   secondary_container: {
@@ -174,6 +178,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: "600",
     color: colors["yellow.200"],
+    fontFamily: "Unbounded",
   },
   singing: {
     fontSize: 12,
@@ -181,20 +186,24 @@ const styles = StyleSheet.create({
     fontWeight: "300",
     paddingTop: 20,
     paddingBottom: 4,
+    fontFamily: "Unbounded",
   },
   already: {
     fontSize: 13,
     color: colors["yellow.200"],
     fontWeight: "500",
+    fontFamily: "Unbounded",
   },
   terms: {
     fontSize: 10,
     fontWeight: "700",
     color: colors["yellow.500"],
+    fontFamily: "Unbounded",
   },
   of: {
     fontSize: 10,
     fontWeight: "400",
     color: colors["yellow.200"],
+    fontFamily: "Unbounded",
   },
 });

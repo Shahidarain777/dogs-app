@@ -14,11 +14,20 @@ import colors from "../res/colors";
 export default function VerifyForgotOTP() {
   return (
     <ScrollView
-      contentContainerStyle={{ alignItems: "center", paddingTop: 60 }}
+      contentContainerStyle={{
+        alignItems: "center",
+        paddingTop: 60,
+        paddingHorizontal: 20,
+      }}
       style={{ flex: 1, backgroundColor: colors["yellow.200"] }}
     >
       <Text
-        style={{ fontSize: 24, color: colors["brown.900"], fontWeight: "700" }}
+        style={{
+          fontSize: 24,
+          color: colors["brown.900"],
+          fontWeight: "700",
+          fontFamily: "Unbounded",
+        }}
       >
         Verification
       </Text>
@@ -38,7 +47,12 @@ export default function VerifyForgotOTP() {
         />
       </View>
       <Text
-        style={{ fontSize: 15, color: colors["brown.900"], fontWeight: "600" }}
+        style={{
+          fontSize: 15,
+          color: colors["brown.900"],
+          fontWeight: "600",
+          fontFamily: "Unbounded",
+        }}
       >
         Enter the verification code we just sent you on your phone number.
       </Text>
@@ -62,7 +76,7 @@ export default function VerifyForgotOTP() {
           //   borderWidth: 1,
           borderColor: colors["brown.900"],
           fontSize: 24,
-          //   borderRadius: 6,
+          fontFamily: "Unbounded",
           height: 56,
         }}
       />
