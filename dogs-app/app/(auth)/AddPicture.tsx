@@ -61,7 +61,7 @@ import CodeInput from "react-native-confirmation-code-input";
 
 
       <View style={{ height: 20, marginTop:40,}}></View>
-      <Link href={{ pathname: "AdGender" }} asChild>
+      <Link href={{ pathname: "AddGender" }} asChild>
         <Pressable>
           <PrimaryButton title="Next" />
         </Pressable>
