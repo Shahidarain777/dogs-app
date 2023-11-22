@@ -1,4 +1,5 @@
 import { Link } from "expo-router";
+import { useState } from "react";
 import {
   View,
   Text,
@@ -12,6 +13,8 @@ import PrimaryButton from "../common/components/PrimaryButton";
 import colors from "../res/colors";
 
 export default function Login() {
+  const [passwordHidden, setPasswordHidden] = useState(true);
+
   return (
     <View style={{ flex: 1 }}>
       <ScrollView
@@ -33,6 +36,7 @@ export default function Login() {
             fontSize: 24,
             fontWeight: "700",
             color: colors["brown.900"],
+            fontFamily: "Unbounded",
           }}
         >
           LOG IN
@@ -43,13 +47,13 @@ export default function Login() {
             style={{
               backgroundColor: colors["brown.200"],
               width: 240,
-              padding: 10,
-              borderRadius: 4,
+              padding: 14,
+              borderRadius: 8,
               margin: 4,
             }}
           >
             <TextInput
-              style={{ flex: 1, fontSize: 20 }}
+              style={{ flex: 1, fontSize: 18, fontFamily: "Unbounded" }}
               placeholder="Phone Number"
             />
           </View>
@@ -57,22 +61,35 @@ export default function Login() {
             style={{
               backgroundColor: colors["brown.200"],
               width: 240,
-              padding: 10,
-              borderRadius: 4,
+              padding: 14,
+              borderRadius: 8,
               margin: 4,
               flexDirection: "row",
             }}
           >
             <TextInput
-              style={{ flex: 1, fontSize: 20 }}
+              secureTextEntry={!passwordHidden}
+              style={{ flex: 1, fontSize: 18, fontFamily: "Unbounded" }}
               placeholder="Password"
             />
-            <FontAwesome name={"eye"} color={"#444"} size={18} />
+            <FontAwesome
+              onPress={() => setPasswordHidden(!passwordHidden)}
+              name={passwordHidden ? "eye" : "eye-slash"}
+              color={"#444"}
+              size={20}
+            />
           </View>
           <Link href={{ pathname: "ForgotPassword" }} asChild>
             <Pressable>
-              <Text style={{ textAlign: "right", fontSize: 8, padding: 10 }}>
-                Forget password?
+              <Text
+                style={{
+                  textAlign: "right",
+                  fontSize: 8,
+                  padding: 10,
+                  fontFamily: "Unbounded",
+                }}
+              >
+                Forgot password?
               </Text>
             </Pressable>
           </Link>
@@ -89,6 +106,7 @@ export default function Login() {
               fontSize: 12,
               fontWeight: "400",
               color: colors["brown.900"],
+              fontFamily: "Unbounded",
             }}
           >
             Don’t have an account?
@@ -98,8 +116,10 @@ export default function Login() {
               fontSize: 12,
               fontWeight: "600",
               color: colors["brown.900"],
+              fontFamily: "Unbounded",
             }}
           >
+            {" "}
             Create
           </Text>
         </View>

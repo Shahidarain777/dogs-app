@@ -26,13 +26,21 @@ export default function NewPassword() {
             fontSize: 24,
             fontWeight: "700",
             color: colors["brown.900"],
+            fontFamily: "Unbounded",
           }}
         >
           New password
         </Text>
         <View style={{ height: 40 }}></View>
         <View>
-          <Text style={{ fontSize: 14, fontWeight: "700" }}>
+          <Text
+            style={{
+              paddingHorizontal: 4,
+              fontSize: 14,
+              fontWeight: "700",
+              fontFamily: "Unbounded",
+            }}
+          >
             Enter New Password
           </Text>
           <View
@@ -46,11 +54,19 @@ export default function NewPassword() {
             }}
           >
             <TextInput
-              style={{ flex: 1, fontSize: 14 }}
+              style={{ flex: 1, fontSize: 14, fontFamily: "Unbounded" }}
               placeholder="8 symbols at least"
             />
           </View>
-          <Text style={{ fontSize: 14, fontWeight: "700", paddingTop: 10 }}>
+          <Text
+            style={{
+              paddingHorizontal: 4,
+              fontSize: 14,
+              fontWeight: "700",
+              paddingTop: 10,
+              fontFamily: "Unbounded",
+            }}
+          >
             Confirm password
           </Text>
 
@@ -66,14 +82,14 @@ export default function NewPassword() {
             }}
           >
             <TextInput
-              style={{ flex: 1, fontSize: 14 }}
+              style={{ flex: 1, fontSize: 14, fontFamily: "Unbounded" }}
               placeholder="8 symbols at least"
             />
             <FontAwesome name={"eye"} color={"#444"} size={18} />
           </View>
         </View>
         <View style={{ height: 38 }}></View>
-        <Link href={{ pathname: "Login" }} asChild>
+        <Link href={{ pathname: "NotificationServicesSettings" }} asChild>
           <Pressable>
             <PrimaryButton title="Submit" />
           </Pressable>

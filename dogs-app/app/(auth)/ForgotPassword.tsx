@@ -17,7 +17,12 @@ export default function ForgotPassword() {
       style={{ flex: 1, backgroundColor: colors["yellow.200"] }}
     >
       <Text
-        style={{ fontSize: 24, color: colors["brown.900"], fontWeight: "700" }}
+        style={{
+          fontSize: 24,
+          color: colors["brown.900"],
+          fontWeight: "700",
+          fontFamily: "Unbounded",
+        }}
       >
         Forgot Password?
       </Text>
@@ -37,7 +42,13 @@ export default function ForgotPassword() {
         />
       </View>
       <Text
-        style={{ fontSize: 15, color: colors["brown.900"], fontWeight: "600" }}
+        style={{
+          fontSize: 15,
+          color: colors["brown.900"],
+          fontWeight: "600",
+          fontFamily: "Unbounded",
+          paddingHorizontal: 20,
+        }}
       >
         Enter the phone number associated with your account.
       </Text>
@@ -58,6 +69,7 @@ export default function ForgotPassword() {
             padding: 10,
             color: colors["brown.900"],
             textAlign: "center",
+            fontFamily: "Unbounded",
           }}
         />
       </View>
@@ -70,3 +82,19 @@ export default function ForgotPassword() {
     </ScrollView>
   );
 }
+
+// ,
+//     "extra": {
+//       "router": {
+//         "origin": false
+//       },
+//       "eas": {
+//         "projectId": "bb48b371-f414-41b6-ab31-6e95d610598c"
+//       }
+//     },
+//     "runtimeVersion": {
+//       "policy": "appVersion"
+//     },
+//     "updates": {
+//       "url": "https://u.expo.dev/bb48b371-f414-41b6-ab31-6e95d610598c"
+//     }

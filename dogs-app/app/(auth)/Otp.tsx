@@ -30,6 +30,8 @@ export default function Otp() {
             fontSize: 24,
             fontWeight: "700",
             color: colors["brown.900"],
+            fontFamily: "Unbounded",
+            marginVertical: 10,
           }}
         >
           VERIFICATION CODE
@@ -39,6 +41,7 @@ export default function Otp() {
             fontSize: 12,
             color: colors["brown.900"],
             fontWeight: "400",
+            fontFamily: "Unbounded",
           }}
         >
           A verification code has been sent to your phone number.
@@ -65,6 +68,7 @@ export default function Otp() {
             fontSize: 24,
             borderRadius: 6,
             height: 56,
+            fontFamily: "Unbounded",
           }}
         />
 
@@ -80,6 +84,7 @@ export default function Otp() {
               fontSize: 12,
               fontWeight: "400",
               color: colors["brown.900"],
+              fontFamily: "Unbounded",
             }}
           >
             Didn’t receive the code?
@@ -87,10 +92,12 @@ export default function Otp() {
           <Text
             style={{
               fontSize: 12,
-              fontWeight: "600",
+              fontWeight: "800",
               color: colors["brown.900"],
+              fontFamily: "Unbounded",
             }}
           >
+            {" "}
             Resend
           </Text>
           <Text
@@ -98,6 +105,7 @@ export default function Otp() {
               fontSize: 12,
               fontWeight: "400",
               color: colors["brown.900"],
+              fontFamily: "Unbounded",
             }}
           >
             {" "}
