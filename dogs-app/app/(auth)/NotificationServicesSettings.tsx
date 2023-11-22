@@ -21,7 +21,7 @@ export default function NotificationServicesSettings() {
           paddingHorizontal: 30,
         }}
       >
-        <Link href={{ pathname: "NewPassword" }} asChild>
+        <Link href={{ pathname: "AddOwner" }} asChild>
           <Pressable>
             <Text
               style={{

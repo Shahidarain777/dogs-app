@@ -95,7 +95,7 @@ export default function Registration() {
         </Link>
 
         <View style={{ height: 20 }}></View>
-        <Link href={{ pathname: "" }} asChild>
+        <Link href={{ pathname: "AddPicture" }} asChild>
           <Pressable>
             <PrimaryButton title="Don't have a dog" />
           </Pressable>
