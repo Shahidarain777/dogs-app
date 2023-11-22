@@ -1,6 +1,6 @@
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Link, Tabs } from "expo-router";
-import { Pressable, useColorScheme } from "react-native";
+import { Pressable, useColorScheme, View, Image, Text } from "react-native";
 import Colors from "../../../constants/Colors";
 import { DrawerToggleButton } from "@react-navigation/drawer";
 import colors from "../../res/colors";
@@ -25,7 +25,7 @@ export default function TabLayout() {
         tabBarInactiveTintColor: colors["brown.200"],
         tabBarLabelStyle: { fontFamily: "Unbounded" },
         tabBarStyle: {
-          backgroundColor: colors["yellow.200"],
+          backgroundColor: colors["yellow.500"],
           borderTopWidth: 1,
           borderTopColor: colors["brown.900"],
         },
@@ -34,8 +34,42 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
+          headerStyle: {
+            backgroundColor: colors["yellow.200"],
+            borderBottomColor: colors["brown.900"],
+            borderBottomWidth: 1,
+          },
           title: "Home",
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
+          headerRight: () => (
+            <View style={{ marginRight: 20, alignItems: "center" }}>
+              <View
+                style={{
+                  backgroundColor: colors["yellow.500"],
+                  height: 34,
+                  width: 34,
+                  borderWidth: 2,
+                  borderRadius: 30,
+                  paddingTop: 5,
+                  alignItems: "center",
+                }}
+              >
+                <Image
+                  style={{ marginTop: 0, height: 22, width: 22 }}
+                  source={require("../../res/images/pngs/black-foot.png")}
+                />
+              </View>
+              <Text
+                style={{
+                  fontFamily: "Unbounded",
+                  fontSize: 10,
+                  fontWeight: "400",
+                }}
+              >
+                Profile
+              </Text>
+            </View>
+          ),
           headerLeft: () => (
             <DrawerToggleButton tintColor={colors["brown.900"]} />
             // <Link href="/modal" asChild>
