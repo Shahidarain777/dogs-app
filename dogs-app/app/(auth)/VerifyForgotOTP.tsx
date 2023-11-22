@@ -38,7 +38,7 @@ export default function VerifyForgotOTP() {
         />
       </View>
       <Text
-        style={{ fontSize: 15, color: colors["brown.900"], fontWeight: "600" }}
+        style={{ fontSize: 15, color: colors["brown.900"], fontWeight: "600",paddingHorizontal:20, }}
       >
         Enter the verification code we just sent you on your phone number.
       </Text>

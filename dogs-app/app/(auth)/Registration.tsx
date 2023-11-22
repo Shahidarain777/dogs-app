@@ -78,7 +78,7 @@ export default function Registration() {
               }}
             />
           </View>
-          <Link href={{ pathname: "Otp" }} asChild>
+          <Link href={{ pathname: "AddOwner" }} asChild>
             <Pressable
               style={{
                 backgroundColor: colors["yellow.500"],

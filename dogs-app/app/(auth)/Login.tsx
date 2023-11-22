@@ -105,7 +105,7 @@ export default function Login() {
         </View>
       </ScrollView>
       <Image
-        style={{ alignSelf: "center", position: "absolute", bottom: 1 }}
+        style={{ alignSelf: "center", position: "absolute",    top: 650, }}
         source={require("../res/images/pngs/footprint_large.png")}
       />
     </View>

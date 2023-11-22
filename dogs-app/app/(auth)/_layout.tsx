@@ -30,6 +30,11 @@ const StackLayout = () => {
       />
       <Stack.Screen name="ForgotPassword" options={{ headerShown: false }} />
       <Stack.Screen name="VerifyForgotOTP" options={{ headerShown: false }} />
+      <Stack.Screen name="AddOwner" options={{ headerShown: false }} />
+      <Stack.Screen name="AddPicture" options={{ headerShown: false }} />
+      <Stack.Screen name="DogAge" options={{ headerShown: false }} />
+      <Stack.Screen name="AdGender" options={{ headerShown: false }} />
+      <Stack.Screen name="Perference" options={{ headerShown: false }} />
       {/* <Stack.Screen
 				name="register"
 				options={{

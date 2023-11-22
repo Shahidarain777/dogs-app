@@ -80,7 +80,7 @@ export default function NewPassword() {
         </Link>
       </ScrollView>
       <Image
-        style={{ alignSelf: "flex-end", position: "absolute", bottom: 0 }}
+        style={{ alignSelf: "flex-end", position: "absolute",top: 515,}}
         source={require("../res/images/pngs/footprint_rotated.png")}
       />
     </View>
