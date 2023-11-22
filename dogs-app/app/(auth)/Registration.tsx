@@ -51,7 +51,13 @@ export default function Registration() {
                   />
                 );
               }}
-              dropdownStyle={{}}
+              dropdownStyle={{
+                backgroundColor: colors["yellow.200"],
+                borderRadius: 8,
+                borderWidth: 2,
+                borderColor: colors["brown.900"],
+                minWidth: 150,
+              }}
               data={countries}
               buttonStyle={{
                 padding: 10,

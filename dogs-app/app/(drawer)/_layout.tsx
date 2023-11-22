@@ -70,8 +70,8 @@ import { View } from "react-native";
 
 export default function DrawerLayout() {
   const [loaded, error] = useFonts({
-    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
-    Unbounded: require("../assets/fonts/Unbounded-VariableFont_wght.ttf"),
+    SpaceMono: require("../../assets/fonts/SpaceMono-Regular.ttf"),
+    Unbounded: require("../../assets/fonts/Unbounded-VariableFont_wght.ttf"),
     ...FontAwesome.font,
   });
 
@@ -95,7 +95,7 @@ export default function DrawerLayout() {
       screenOptions={{ headerShown: false, swipeEdgeWidth: 0 }}
     >
       <Drawer.Screen
-        name="(auth)"
+        name="(tabs)"
         options={{
           drawerLabel: "Home",
           title: "Home",

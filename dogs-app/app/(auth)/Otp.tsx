@@ -92,11 +92,12 @@ export default function Otp() {
           <Text
             style={{
               fontSize: 12,
-              fontWeight: "600",
+              fontWeight: "800",
               color: colors["brown.900"],
               fontFamily: "Unbounded",
             }}
           >
+            {" "}
             Resend
           </Text>
           <Text

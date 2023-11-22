@@ -34,7 +34,12 @@ export default function NewPassword() {
         <View style={{ height: 40 }}></View>
         <View>
           <Text
-            style={{ fontSize: 14, fontWeight: "700", fontFamily: "Unbounded" }}
+            style={{
+              paddingHorizontal: 4,
+              fontSize: 14,
+              fontWeight: "700",
+              fontFamily: "Unbounded",
+            }}
           >
             Enter New Password
           </Text>
@@ -55,6 +60,7 @@ export default function NewPassword() {
           </View>
           <Text
             style={{
+              paddingHorizontal: 4,
               fontSize: 14,
               fontWeight: "700",
               paddingTop: 10,
@@ -83,7 +89,7 @@ export default function NewPassword() {
           </View>
         </View>
         <View style={{ height: 38 }}></View>
-        <Link href={{ pathname: "Login" }} asChild>
+        <Link href={{ pathname: "NotificationServicesSettings" }} asChild>
           <Pressable>
             <PrimaryButton title="Submit" />
           </Pressable>

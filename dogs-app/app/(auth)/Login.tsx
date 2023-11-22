@@ -1,4 +1,5 @@
 import { Link } from "expo-router";
+import { useState } from "react";
 import {
   View,
   Text,
@@ -12,6 +13,8 @@ import PrimaryButton from "../common/components/PrimaryButton";
 import colors from "../res/colors";
 
 export default function Login() {
+  const [passwordHidden, setPasswordHidden] = useState(true);
+
   return (
     <View style={{ flex: 1 }}>
       <ScrollView
@@ -65,10 +68,16 @@ export default function Login() {
             }}
           >
             <TextInput
+              secureTextEntry={!passwordHidden}
               style={{ flex: 1, fontSize: 18, fontFamily: "Unbounded" }}
               placeholder="Password"
             />
-            <FontAwesome name={"eye"} color={"#444"} size={18} />
+            <FontAwesome
+              onPress={() => setPasswordHidden(!passwordHidden)}
+              name={passwordHidden ? "eye" : "eye-slash"}
+              color={"#444"}
+              size={20}
+            />
           </View>
           <Link href={{ pathname: "ForgotPassword" }} asChild>
             <Pressable>
@@ -80,7 +89,7 @@ export default function Login() {
                   fontFamily: "Unbounded",
                 }}
               >
-                Forget password?
+                Forgot password?
               </Text>
             </Pressable>
           </Link>
@@ -110,6 +119,7 @@ export default function Login() {
               fontFamily: "Unbounded",
             }}
           >
+            {" "}
             Create
           </Text>
         </View>
