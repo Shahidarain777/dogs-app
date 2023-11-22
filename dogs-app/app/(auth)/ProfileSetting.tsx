@@ -33,9 +33,8 @@ import {
             fontSize: 30,
             color: colors["brown.900"],
             fontWeight: "bold",
-            marginTop:100,
             textAlign:'center',
-            marginTop:5,
+           
             
           }}
         >
