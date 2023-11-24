@@ -33,7 +33,7 @@ const StackLayout = () => {
       <Stack.Screen name="NewPassword" options={{ headerShown: false }} />
       <Stack.Screen name="AddOwner" options={{ headerShown: false }} />
       <Stack.Screen name="AddPicture" options={{ headerShown: false }} />
-      <Stack.Screen name="AdGender" options={{ headerShown: false }} />
+      <Stack.Screen name="AddGender" options={{ headerShown: false }} />
       <Stack.Screen name="DogAge" options={{ headerShown: false }} />
       <Stack.Screen name="Perference" options={{ headerShown: false }} />
       <Stack.Screen name="ProfileSetting" options={{ headerShown: false }} />

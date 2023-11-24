@@ -42,6 +42,7 @@ export default function Otp() {
             color: colors["brown.900"],
             fontWeight: "400",
             fontFamily: "Unbounded",
+            paddingHorizontal: 20,
           }}
         >
           A verification code has been sent to your phone number.
@@ -114,7 +115,7 @@ export default function Otp() {
         </View>
       </ScrollView>
       <Image
-        style={{ alignSelf: "center", position: "absolute", bottom: 1 }}
+        style={{ alignSelf: "center", position: "absolute", top: 650 }}
         source={require("../res/images/pngs/footprint_large.png")}
       />
     </View>

@@ -20,6 +20,7 @@ import { SplashScreen } from "expo-router";
 import Drawer from "expo-router/drawer";
 import { useEffect } from "react";
 import { View } from "react-native";
+import DrawerMenu from "../components/DrawerMenu";
 
 // export const unstable_settings = {
 //   // Ensure that reloading on `/modal` keeps a back button present.
@@ -91,7 +92,7 @@ export default function DrawerLayout() {
   }
   return (
     <Drawer
-      drawerContent={() => <View></View>}
+      // drawerContent={() => <DrawerMenu/>}
       screenOptions={{ headerShown: false, swipeEdgeWidth: 0 }}
     >
       <Drawer.Screen

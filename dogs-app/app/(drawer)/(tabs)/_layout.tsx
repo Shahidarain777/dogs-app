@@ -1,9 +1,18 @@
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Link, Tabs } from "expo-router";
-import { Pressable, useColorScheme, View, Image, Text } from "react-native";
+import {
+  Pressable,
+  useColorScheme,
+  View,
+  Image,
+  Text,
+  TouchableOpacity,
+} from "react-native";
 import Colors from "../../../constants/Colors";
 import { DrawerToggleButton } from "@react-navigation/drawer";
 import colors from "../../res/colors";
+import ProfileModal from "../../../components/ProfileModel";
+import { useState } from "react";
 
 /**
  * You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
@@ -17,6 +26,7 @@ function TabBarIcon(props: {
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
+  const [visible, setVisible] = useState(false);
 
   return (
     <Tabs
@@ -42,7 +52,10 @@ export default function TabLayout() {
           title: "Home",
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
           headerRight: () => (
-            <View style={{ marginRight: 20, alignItems: "center" }}>
+            <TouchableOpacity
+              onPress={() => setVisible(true)}
+              style={{ marginRight: 20, alignItems: "center" }}
+            >
               <View
                 style={{
                   backgroundColor: colors["yellow.500"],
@@ -68,7 +81,11 @@ export default function TabLayout() {
               >
                 Profile
               </Text>
-            </View>
+              <ProfileModal
+                visible={visible}
+                onCancel={() => setVisible(!visible)}
+              />
+            </TouchableOpacity>
           ),
           headerLeft: () => (
             <DrawerToggleButton tintColor={colors["brown.900"]} />

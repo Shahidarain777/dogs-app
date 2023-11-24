@@ -29,7 +29,8 @@ export default function Registration() {
 
         <Text
           style={{
-            fontSize: 25,
+            fontFamily: "Unbounded",
+            fontSize: 18,
             color: colors["brown.900"],
             fontWeight: "600",
             marginTop: 150,
@@ -48,6 +49,7 @@ export default function Registration() {
         >
           <TextInput
             style={{
+              fontFamily: "Unbounded",
               width: 230,
               fontSize: 14,
               padding: 10,
@@ -59,7 +61,8 @@ export default function Registration() {
 
         <Text
           style={{
-            fontSize: 22,
+            fontFamily: "Unbounded",
+            fontSize: 18,
             color: colors["brown.900"],
             fontWeight: "600",
             marginTop: 50,
@@ -78,6 +81,7 @@ export default function Registration() {
         >
           <TextInput
             style={{
+              fontFamily: "Unbounded",
               width: 230,
               fontSize: 14,
               padding: 10,
