@@ -52,7 +52,7 @@ import {
         </View>
 
         
-        <View style={{ flexDirection:'row', marginTop:30,}}>
+        <View style={{ flexDirection:'row', marginTop:100,}}>
         <View style={{ height:150,width:140, borderRadius:15, marginHorizontal:15,
         borderWidth:1}}>
           <Image
@@ -73,10 +73,7 @@ import {
      
           
   
-        <Image
-        style={{marginTop:50 ,height:100,width:130,}}
-        source={require("../res/images/pngs/footprint_large.png")}
-      />
+     
         
           <Link href={{ pathname: "ProfileSetting" }} asChild>
             <Pressable>

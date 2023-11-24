@@ -20,23 +20,8 @@ import {
       <View style={{ flex: 1, }}>
         
         <ScrollView contentContainerStyle={styles.container}>
-        <Link href={{ pathname: "AddOwner" }} asChild>
-          <Pressable>
-            <Text
-              style={{
-                textAlign:"right",
-                fontSize: 15,
-                fontFamily: "Unbounded",
-                marginTop:50,
-                marginRight:230
-              }}
-            >
-              Back
-            </Text>
-          </Pressable>
-        </Link>
-
-        <View style={{ flexDirection:'row', marginTop:20,}}>
+       
+        <View style={{ flexDirection:'row', marginTop:70,}}>
         <View style={{  backgroundColor: colors["yellow.500"],height:45,width:45,borderWidth:2,borderRadius:30,paddingTop:5,alignItems:'center'}}>
         <Image
         style={{marginTop:0 ,height:30,width:30,}}
@@ -57,7 +42,7 @@ import {
             
           }}
         >
-        Profile Settings
+        Change Password
         </Text>
         </View>
         
@@ -67,7 +52,7 @@ import {
             borderBottomWidth: 2,
             marginVertical: 20,
             alignItems: "center",
-            marginTop:0,
+           
           }}
         >
           <Text
@@ -83,13 +68,14 @@ import {
 
         <Text
           style={{
-            fontSize: 12,
+            fontSize: 15,
             color: colors["brown.900"],
             fontWeight: "600",
-            marginRight:140,
+            textAlign: "center",
+            marginTop:50,
           }}
         >
-          Change Name
+          Current Password
         </Text>
 
         <View
@@ -114,14 +100,14 @@ import {
 
         <Text
           style={{
-            fontSize: 12,
+            fontSize: 15,
             color: colors["brown.900"],
             fontWeight: "600",
-            marginRight:120,
-            marginTop:40,
+            textAlign: "center",
+            marginTop:90,
           }}
         >
-          Change Dog Breed
+          New Password
         </Text>
 
         <View
@@ -144,44 +130,12 @@ import {
           />
         </View>
 
-       
-        <Text
-          style={{
-            fontSize: 12,
-            color: colors["brown.900"],
-            fontWeight: "600",
-            marginRight:120,
-            marginTop:40,
-          }}
-        >
-          Change Dog Image
-        </Text>
-
-        <View
-          style={{
-            borderBottomColor: colors["brown.900"],
-            borderBottomWidth: 1,
-            marginVertical: 20,
-            alignItems: "center",
-          }}
-        >
-          <TextInput
-            style={{
-              width: 230,
-              fontSize: 14,
-              padding: 10,
-              color: colors["brown.900"],
-              textAlign: "center",
-              marginTop:-30
-            }}
-          />
-        </View>
 
       <View style={{height:50}}></View>
         
-          <Link href={{ pathname: "ChangePassword" }} asChild>
+          <Link href={{ pathname: "Login" }} asChild>
             <Pressable>
-              <PrimaryButton title="Submit" />
+              <PrimaryButton title="Save" />
             </Pressable>
           </Link>
         </ScrollView>

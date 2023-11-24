@@ -31,6 +31,11 @@ const StackLayout = () => {
       <Stack.Screen name="ForgotPassword" options={{ headerShown: false }} />
       <Stack.Screen name="VerifyForgotOTP" options={{ headerShown: false }} />
       <Stack.Screen name="NewPassword" options={{ headerShown: false }} />
+      <Stack.Screen name="ProfileSetting" options={{ headerShown: false }} />
+      <Stack.Screen name="ChangePassword" options={{ headerShown: false }} />
+      <Stack.Screen name="LogOut" options={{ headerShown: false }} />
+      <Stack.Screen name="Setting" options={{ headerShown: false }} />
+      <Stack.Screen name="DogBreed" options={{ headerShown: false }} />
       <Stack.Screen
         name="NotificationServicesSettings"
         options={{ headerShown: false }}
