@@ -19,7 +19,7 @@ import PrimaryButtonSquare from "../common/components/PrimaryButtonSquare";
   export default function Registration() {
     return (
       
-        const [count, setCount] = useState(0);
+  
  
       <View style={{ flex: 1, }}>
         
@@ -41,8 +41,8 @@ import PrimaryButtonSquare from "../common/components/PrimaryButtonSquare";
         </Link>
 
         <Image
-        style={{marginTop:10 ,height:50,width:60,marginRight:250, transform: [{ rotate: '-50deg' }]}}
-        source={require("../res/images/pngs/foot.png")}
+        style={{marginTop:0 ,height:70,width:70,marginRight:250, transform: [{ rotate: '-10deg' }]}}
+        source={require("../res/images/pngs/pngwing.png")}
       />
 
         
@@ -76,16 +76,34 @@ import PrimaryButtonSquare from "../common/components/PrimaryButtonSquare";
        
         <TextInput
           style={{
-            fontSize: 15,
+            fontSize: 32,
             color: colors["brown.900"],
             fontWeight: "600",
-            textAlign: "center",
-            marginTop:90,
+           marginRight:140,
+            marginTop:40,
           }}
-          placeholder="Password"
+          placeholder="Dog Breed"
         >
         </TextInput>
-
+        <View
+          style={{
+            borderBottomColor: colors["brown.900"],
+            borderBottomWidth: 2,
+            marginVertical: 20,
+            alignItems: "center",
+            marginTop:-30,
+          }}
+        >
+          <Text
+            style={{
+              width: 280,
+              fontSize: 14,
+              padding: 10,
+              color: colors["brown.900"],
+              textAlign: "center",
+            }}
+          />
+        </View>
         
 
         <View style={{flexDirection:'row',marginTop:30}}>
@@ -173,16 +191,23 @@ import PrimaryButtonSquare from "../common/components/PrimaryButtonSquare";
       </View>
        
        
+      <Image
+        style={{marginLeft:250, marginTop:40 ,height:70,width:70, transform: [{ rotate: '70deg' }]}}
+        source={require("../res/images/pngs/pngwing.png")}
+      />
 
-       
-      
-    
-      <View style={{height:100}}></View>
+      <View style={{height:10}}></View>
           <Link href={{ pathname: "" }} asChild>
             <Pressable>
               <PrimaryButton title="Next" />
             </Pressable>
           </Link>
+
+           
+      <Image
+        style={{marginRight:250, marginTop:20 ,height:70,width:70, transform: [{ rotate: '-10deg' }]}}
+        source={require("../res/images/pngs/pngwing.png")}
+      />
         </ScrollView>
       </View>
     );

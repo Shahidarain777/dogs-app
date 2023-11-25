@@ -117,7 +117,7 @@ import PrimaryButtonSquare from "../common/components/PrimaryButtonSquare";
     
       <View style={{height:50}}></View>
         
-          <Link href={{ pathname: "" }} asChild>
+          <Link href={{ pathname: "Setting" }} asChild>
             <Pressable>
               <PrimaryButton title="Submit" />
             </Pressable>

@@ -85,7 +85,7 @@ export default function Registration() {
               }}
             />
           </View>
-          <Link href={{ pathname: "DogBreed" }} asChild>
+          <Link href={{ pathname: "Otp" }} asChild>
             <Pressable
               style={{
                 backgroundColor: colors["yellow.500"],

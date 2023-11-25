@@ -34,40 +34,40 @@ import {
         </Text>
         
         <View style={{ flexDirection:'row', marginTop:50,}}>
-        <View style={{ height:150,width:140, borderRadius:15, marginHorizontal:15,
+        <TouchableOpacity style={{ height:150,width:140, borderRadius:15, marginHorizontal:15,
         borderWidth:1}}>
          <Image
         style={{marginTop:3 ,height:150,width:130,}}
         source={require("../res/images/pngs/play.png")}
       />
         
-        </View>
-        <View style={{ height:150,width:140, borderRadius:15, marginHorizontal:15,
+        </TouchableOpacity>
+        <TouchableOpacity style={{ height:150,width:140, borderRadius:15, marginHorizontal:15,
         borderWidth:1}}>
          <Image
         style={{marginTop:0 ,height:150,width:130,}}
         source={require("../res/images/pngs/Mate.png")}
       />
-        </View>
+        </TouchableOpacity>
         </View>
 
         
         <View style={{ flexDirection:'row', marginTop:100,}}>
-        <View style={{ height:150,width:140, borderRadius:15, marginHorizontal:15,
+        <TouchableOpacity style={{ height:150,width:140, borderRadius:15, marginHorizontal:15,
         borderWidth:1}}>
           <Image
         style={{marginTop:10 ,height:150,width:130,}}
         source={require("../res/images/pngs/Missing.png")}
       />
-        </View>
-        <View style={{ height:150,width:140, borderRadius:15, marginHorizontal:15,
+        </TouchableOpacity>
+        <TouchableOpacity style={{ height:150,width:140, borderRadius:15, marginHorizontal:15,
         borderWidth:1}}>
               <Image
         style={{marginTop:10 ,height:150,width:130,}}
         source={require("../res/images/pngs/Adopt.png")}
       />
        
-        </View>
+        </TouchableOpacity>
         </View>
        
      

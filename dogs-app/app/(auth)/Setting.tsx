@@ -129,15 +129,6 @@ export default function Registration() {
             }}
           />
         </View>
-
-        
-      
-     
-
-
-      
-
-   
         
       </ScrollView>
     </View>

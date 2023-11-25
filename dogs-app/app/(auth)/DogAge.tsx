@@ -52,16 +52,16 @@ export default function Registration() {
 
 <View style={{ flexDirection:'row',margin:60}}>
 
-<View style={{  width:130,height: 130, paddingLeft:45, paddingTop:30,
+<TouchableOpacity style={{  width:130,height: 130, paddingLeft:45, paddingTop:30,
       borderRadius:15 ,marginTop:15, marginHorizontal:10,borderWidth:2 }}>
        <FontAwesome
                     name={ "venus"}
                     color={"black"}
                     size={50}
                   />
-       </View>
+       </TouchableOpacity>
 
-       <View style={{  width:130,height: 130, paddingLeft:45, paddingTop:30,
+       <TouchableOpacity style={{  width:130,height: 130, paddingLeft:45, paddingTop:30,
       borderRadius:15 ,marginTop:15, marginHorizontal:10,borderWidth:2 }}>
        <FontAwesome
                     name={"mars"}
@@ -71,7 +71,7 @@ export default function Registration() {
                    
                     
                   />
-       </View>
+       </TouchableOpacity>
        </View>
 
 

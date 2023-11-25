@@ -133,7 +133,7 @@ import {
 
       <View style={{height:50}}></View>
         
-          <Link href={{ pathname: "Login" }} asChild>
+          <Link href={{ pathname: "LogOut" }} asChild>
             <Pressable>
               <PrimaryButton title="Save" />
             </Pressable>
