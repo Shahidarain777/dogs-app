@@ -9,6 +9,7 @@ import {
   ScrollView,
 } from "react-native";
 import colors from "../res/colors";
+import Login from "./Login";
 import Registration from "./Registration";
 export default function App() {
   return (
@@ -16,7 +17,8 @@ export default function App() {
       style={{ backgroundColor: colors["yellow.200"] }}
       contentContainerStyle={styles.container}
     >
-      <Registration />
+      <Login />
+      {/* <Registration /> */}
       {/* <Image
         style={styles.logo}
         source={require("./res/images/bhairavan_logo.png")}

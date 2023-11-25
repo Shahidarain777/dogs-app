@@ -17,10 +17,15 @@ const StackLayout = () => {
       }}
     >
       <Stack.Screen
-        name="index"
+        name="Login2"
         options={{ headerTitle: "Login", headerShown: false }}
       />
       <Stack.Screen
+        name="ChangePassword"
+        options={{ headerTitle: "Login", headerShown: false }}
+      />
+
+      {/* <Stack.Screen
         name="Otp"
         options={{ headerTitle: "Otp", headerShown: false }}
       />
@@ -36,12 +41,12 @@ const StackLayout = () => {
       <Stack.Screen name="AddGender" options={{ headerShown: false }} />
       <Stack.Screen name="DogAge" options={{ headerShown: false }} />
       <Stack.Screen name="Perference" options={{ headerShown: false }} />
-      {/* <Stack.Screen name="ProfileSetting" options={{ headerShown: false }} /> */}
+      <Stack.Screen name="ProfileSetting" options={{ headerShown: false }} />
 
       <Stack.Screen
         name="NotificationServicesSettings"
         options={{ headerShown: false }}
-      />
+      /> */}
     </Stack>
   );
 };

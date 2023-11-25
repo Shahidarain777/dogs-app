@@ -93,13 +93,13 @@ export default function DrawerLayout() {
   return (
     <Drawer
       drawerContent={() => <DrawerMenu />}
-      screenOptions={{ headerShown: false, swipeEdgeWidth: 0 }}
+      screenOptions={{ headerShown: false, swipeEdgeWidth: 5 }}
     >
       <Drawer.Screen
         name="(tabs)"
         options={{
-          drawerLabel: "Home",
-          title: "Home",
+          drawerLabel: "Homeee",
+          title: "Hoeeme",
         }}
       />
       {/* /// new code below /// */}

@@ -8,7 +8,6 @@ import {
   Text,
   TouchableOpacity,
 } from "react-native";
-import Colors from "../../../constants/Colors";
 import { DrawerToggleButton } from "@react-navigation/drawer";
 import colors from "../../res/colors";
 import ProfileModal from "../../../components/ProfileModel";
@@ -50,6 +49,7 @@ export default function TabLayout() {
             borderBottomWidth: 1,
           },
           title: "Home",
+
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
           headerRight: () => (
             <TouchableOpacity

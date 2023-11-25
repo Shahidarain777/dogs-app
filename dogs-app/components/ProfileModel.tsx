@@ -1,5 +1,6 @@
 import { FontAwesome } from "@expo/vector-icons";
-import { Modal, Text, TouchableOpacity, View } from "react-native";
+import { Link, router, useRouter } from "expo-router";
+import { Modal, Pressable, Text, TouchableOpacity, View } from "react-native";
 import colors from "../app/res/colors";
 
 interface Props {
@@ -69,9 +70,26 @@ export default function ProfileModal({ visible, onCancel }: Props) {
             borderWidth: 4,
           }}
         >
-          <Row icon={"user-circle-o"} text={"Profile Settings"} />
-          <Row icon={"lock"} text={"Change Password"} />
-          <Row icon={"power-off"} text={"Logout"} />
+          <Link href="/modal" asChild>
+            <Pressable>
+              <Row icon={"user-circle-o"} text={"Profile Settings"} />
+            </Pressable>
+          </Link>
+          <Link href="ChangePassword" asChild>
+            <Pressable onPress={onCancel}>
+              <Row icon={"lock"} text={"Change Password"} />
+            </Pressable>
+          </Link>
+          {/* <Link href="Login" replace asChild> */}
+          <Pressable
+            onPress={() => {
+              onCancel();
+              router.replace("Login");
+            }}
+          >
+            <Row icon={"power-off"} text={"Logout"} />
+          </Pressable>
+          {/* </Link> */}
         </View>
       </View>
     </Modal>

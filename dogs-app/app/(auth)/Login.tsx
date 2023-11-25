@@ -1,4 +1,4 @@
-import { Link } from "expo-router";
+import { Link, router } from "expo-router";
 import { useState } from "react";
 import {
   View,
@@ -31,6 +31,17 @@ export default function Login() {
           }}
           source={require("../res/images/pngs/footprint_small.png")}
         />
+        <Pressable onPress={() => router.back()}>
+          <Text
+            style={{
+              textAlign: "right",
+              fontSize: 15,
+              fontFamily: "Unbounded",
+            }}
+          >
+            Done
+          </Text>
+        </Pressable>
         <Text
           style={{
             fontSize: 24,
@@ -95,11 +106,11 @@ export default function Login() {
           </Link>
         </View>
         <View style={{ height: 38 }}></View>
-        <Link href={{ pathname: "(tabs)" }} asChild>
-          <Pressable>
-            <PrimaryButton title="Login" />
-          </Pressable>
-        </Link>
+        {/* <Link href="(tabs)"> */}
+        <Pressable onPress={() => router.push("(drawer)")}>
+          <PrimaryButton title="Login" />
+        </Pressable>
+        {/* </Link> */}
         <View style={{ flexDirection: "row", padding: 16 }}>
           <Text
             style={{
@@ -125,7 +136,7 @@ export default function Login() {
         </View>
       </ScrollView>
       <Image
-        style={{ alignSelf: "center", position: "absolute",    top: 650, }}
+        style={{ alignSelf: "center", position: "absolute", top: 650 }}
         source={require("../res/images/pngs/footprint_large.png")}
       />
     </View>

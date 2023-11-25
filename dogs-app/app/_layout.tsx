@@ -15,11 +15,16 @@
 // } from "expo-router";
 
 import FontAwesome from "@expo/vector-icons/FontAwesome";
+import {
+  ThemeProvider,
+  DarkTheme,
+  DefaultTheme,
+} from "@react-navigation/native";
 import { useFonts } from "expo-font";
-import { SplashScreen } from "expo-router";
+import { SplashScreen, Stack } from "expo-router";
 import Drawer from "expo-router/drawer";
 import { useEffect } from "react";
-import { View } from "react-native";
+import { useColorScheme, View } from "react-native";
 import DrawerMenu from "../components/DrawerMenu";
 
 // export const unstable_settings = {
@@ -70,6 +75,7 @@ import DrawerMenu from "../components/DrawerMenu";
 // }
 
 export default function DrawerLayout() {
+  const colorScheme = useColorScheme();
   const [loaded, error] = useFonts({
     SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
     Unbounded: require("../assets/fonts/Unbounded-VariableFont_wght.ttf"),
@@ -90,18 +96,21 @@ export default function DrawerLayout() {
   if (!loaded) {
     return null;
   }
+
   return (
+    // <Stack>
+    //   <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+    // </Stack>
     <Drawer
-      // drawerContent={() => <DrawerMenu/>}
-      screenOptions={{ headerShown: false, swipeEdgeWidth: 0 }}
+      drawerContent={() => <DrawerMenu />}
+      screenOptions={{
+        swipeEnabled: false,
+        headerShown: false,
+        swipeEdgeWidth: 0,
+      }}
     >
-      <Drawer.Screen
-        name="(auth)"
-        options={{
-          drawerLabel: "Home",
-          title: "Home",
-        }}
-      />
+      <Drawer.Screen name="(auth)" />
+      {/* <Drawer.Screen name="(drawer)" /> */}
       {/* /// new code below /// */}
     </Drawer>
   );

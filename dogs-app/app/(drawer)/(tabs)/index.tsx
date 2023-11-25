@@ -1,3 +1,4 @@
+import { router } from "expo-router";
 import { StyleSheet, Image, ScrollView } from "react-native";
 
 import EditScreenInfo from "../../../components/EditScreenInfo";
