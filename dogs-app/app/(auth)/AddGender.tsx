@@ -15,7 +15,7 @@ import {
   
   import colors from "../res/colors";
   const countries = ["Egypt", "Canada", "Australia", "Ireland"];
-  export default function Registration() {
+  export default function AdGender() {
     return (
       <View style={{ flex: 1 }}>
         <ScrollView contentContainerStyle={styles.container}>

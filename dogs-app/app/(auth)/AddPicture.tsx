@@ -18,7 +18,7 @@ import {
 import colors from "../res/colors";
 import CodeInput from "react-native-confirmation-code-input";
   const countries = ["Egypt", "Canada", "Australia", "Ireland"];
-  export default function Registration() {
+  export default function AddPicture() {
     return (
         
       <View style={{flex:1}}>

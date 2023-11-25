@@ -13,7 +13,7 @@ import { Link } from "expo-router";
 
 import colors from "../res/colors";
 
-export default function Registration() {
+export default function AddOwner() {
   return (
     <View style={{ flex: 1 }}>
       <ScrollView contentContainerStyle={styles.container}>

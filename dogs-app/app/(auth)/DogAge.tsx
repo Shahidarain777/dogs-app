@@ -15,7 +15,7 @@ import { Link } from "expo-router";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import colors from "../res/colors";
 const countries = ["Egypt", "Canada", "Australia", "Ireland"];
-export default function Registration() {
+export default function DogAge() {
   return (
     
     <View style={{ flex: 1 }}>
