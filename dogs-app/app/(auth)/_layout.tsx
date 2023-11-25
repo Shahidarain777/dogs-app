@@ -38,6 +38,11 @@ const StackLayout = () => {
       <Stack.Screen name="Perference" options={{ headerShown: false }} />
       {/* <Stack.Screen name="ProfileSetting" options={{ headerShown: false }} /> */}
 
+      {/* <Stack.Screen name="ProfileSetting" options={{ headerShown: false }} /> */}
+      <Stack.Screen name="ChangePassword" options={{ headerShown: false }} />
+      <Stack.Screen name="LogOut" options={{ headerShown: false }} />
+      <Stack.Screen name="Setting" options={{ headerShown: false }} />
+      <Stack.Screen name="DogBreed" options={{ headerShown: false }} />
       <Stack.Screen
         name="NotificationServicesSettings"
         options={{ headerShown: false }}

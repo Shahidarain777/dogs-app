@@ -32,7 +32,7 @@ export default function Registration() {
         </Text>
 
         <View style={{ flexDirection: "row", marginTop: 50 }}>
-          <View
+          <TouchableOpacity
             style={{
               height: 150,
               width: 140,
@@ -45,8 +45,8 @@ export default function Registration() {
               style={{ marginTop: 3, height: 150, width: 130 }}
               source={require("../res/images/pngs/play.png")}
             />
-          </View>
-          <View
+          </TouchableOpacity>
+          <TouchableOpacity
             style={{
               height: 150,
               width: 140,
@@ -59,11 +59,11 @@ export default function Registration() {
               style={{ marginTop: 0, height: 150, width: 130 }}
               source={require("../res/images/pngs/Mate.png")}
             />
-          </View>
+          </TouchableOpacity>
         </View>
 
-        <View style={{ flexDirection: "row", marginTop: 30 }}>
-          <View
+        <View style={{ flexDirection: "row", marginTop: 100 }}>
+          <TouchableOpacity
             style={{
               height: 150,
               width: 140,
@@ -76,8 +76,8 @@ export default function Registration() {
               style={{ marginTop: 10, height: 150, width: 130 }}
               source={require("../res/images/pngs/Missing.png")}
             />
-          </View>
-          <View
+          </TouchableOpacity>
+          <TouchableOpacity
             style={{
               height: 150,
               width: 140,
@@ -90,15 +90,10 @@ export default function Registration() {
               style={{ marginTop: 10, height: 150, width: 130 }}
               source={require("../res/images/pngs/Adopt.png")}
             />
-          </View>
+          </TouchableOpacity>
         </View>
 
-        <Image
-          style={{ marginTop: 50, height: 100, width: 130 }}
-          source={require("../res/images/pngs/footprint_large.png")}
-        />
-
-        <Link href={{ pathname: "(drawer)" }} asChild>
+        <Link href={{ pathname: "ProfileSetting" }} asChild>
           <Pressable>
             <PrimaryButton title="Next" />
           </Pressable>

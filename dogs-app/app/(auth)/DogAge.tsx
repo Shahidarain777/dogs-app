@@ -62,6 +62,33 @@ export default function Registration() {
           >
             <FontAwesome name={"venus"} color={"black"} size={50} />
           </View>
+        style={{marginTop:10 ,height:130,width:220,}}
+        source={require("../res/images/pngs/footprint_group.png")}
+      />
+
+<View style={{ flexDirection:'row',margin:60}}>
+
+<TouchableOpacity style={{  width:130,height: 130, paddingLeft:45, paddingTop:30,
+      borderRadius:15 ,marginTop:15, marginHorizontal:10,borderWidth:2 }}>
+       <FontAwesome
+                    name={ "venus"}
+                    color={"black"}
+                    size={50}
+                  />
+       </TouchableOpacity>
+
+       <TouchableOpacity style={{  width:130,height: 130, paddingLeft:45, paddingTop:30,
+      borderRadius:15 ,marginTop:15, marginHorizontal:10,borderWidth:2 }}>
+       <FontAwesome
+                    name={"mars"}
+                    color={"black"}
+                    size={50}
+                    
+                   
+                    
+                  />
+       </TouchableOpacity>
+       </View>
 
           <View
             style={{
