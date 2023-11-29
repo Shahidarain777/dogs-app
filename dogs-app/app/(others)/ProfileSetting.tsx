@@ -1,45 +1,9 @@
-import {
-    View,
-    Text,
-    StyleSheet,
-    Image,
-    TextInput,
-    Pressable,
-    TouchableOpacity,
-    ScrollView,
-  } from "react-native";
-  
-  import PrimaryButton from "../common/components/PrimaryButton";
-  import { Link } from "expo-router";
-  import FontAwesome from "react-native-vector-icons/FontAwesome";
-  import colors from "../res/colors";
-  const countries = ["Egypt", "Canada", "Australia", "Ireland"];
-  export default function ProfileSetting() {
-    return (
-      
-      <View style={{ flex: 1, }}>
-        
-        <ScrollView contentContainerStyle={styles.container}>
-        <Link href={{ pathname: "AddOwner" }} asChild>
-          <Pressable>
-            <Text
-              style={{
-                textAlign:"right",
-                fontSize: 15,
-                fontFamily: "Unbounded",
-                marginTop:50,
-                marginRight:230
-              }}
-            >
-              Back
-            </Text>
-          </Pressable>
-        </Link>
 
 import PrimaryButton from "../common/components/PrimaryButton";
 import { Link, router } from "expo-router";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import colors from "../res/colors";
+import { View, ScrollView, Pressable, TextInput ,Text,Image,StyleSheet} from "react-native";
 const countries = ["Egypt", "Canada", "Australia", "Ireland"];
 export default function ProfileSetting() {
   return (

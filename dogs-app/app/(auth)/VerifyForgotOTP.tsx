@@ -4,7 +4,6 @@ import {
   Text,
   Pressable,
   ScrollView,
-  TextInput,
   Image,
 } from "react-native";
 import CodeInput from "react-native-confirmation-code-input";

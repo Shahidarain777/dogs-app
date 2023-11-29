@@ -3,7 +3,6 @@ import {
   Text,
   StyleSheet,
   Image,
-  TextInput,
   Pressable,
   TouchableOpacity,
   ScrollView,
@@ -13,7 +12,6 @@ import PrimaryButton from "../common/components/PrimaryButton";
 import { Link } from "expo-router";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import colors from "../res/colors";
-const countries = ["Egypt", "Canada", "Australia", "Ireland"];
 export default function DogAge() {
   return (
     <View style={{ flex: 1 }}>
@@ -63,7 +61,7 @@ export default function DogAge() {
             <FontAwesome name={"venus"} color={"black"} size={50} />
           </View>
 
-          <View style={{ flexDirection: "row", margin: 60 }}>
+          <View style={{ flexDirection: "row", margin: 30 }}>
             <TouchableOpacity
               style={{
                 width: 130,

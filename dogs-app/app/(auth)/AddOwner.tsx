@@ -10,9 +10,7 @@ import {
 
 import PrimaryButton from "../common/components/PrimaryButton";
 import { Link } from "expo-router";
-
 import colors from "../res/colors";
-
 export default function AddOwner() {
   return (
     <View style={{ flex: 1 }}>
@@ -99,7 +97,7 @@ export default function AddOwner() {
         </Link>
 
         <View style={{ height: 20 }}></View>
-        <Link href={{ pathname: "AddPicture" }} asChild>
+        <Link href={{ pathname: "DogBreed" }} asChild>
           <Pressable>
             <PrimaryButton title="Don't have a dog" />
           </Pressable>

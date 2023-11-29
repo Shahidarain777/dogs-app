@@ -5,17 +5,13 @@ import {
     Image,
     TextInput,
     Pressable,
-    Button,
     TouchableOpacity,
     ScrollView,
   } from "react-native";
   
   import PrimaryButton from "../common/components/PrimaryButton";
   import { Link } from "expo-router";
-  import FontAwesome from "react-native-vector-icons/FontAwesome";
   import colors from "../res/colors";
-import PrimaryButtonSquare from "../common/components/PrimaryButtonSquare";
-  const countries = ["Egypt", "Canada", "Australia", "Ireland"];
   export default function DogBreed() {
     return (
       
@@ -197,7 +193,7 @@ import PrimaryButtonSquare from "../common/components/PrimaryButtonSquare";
       />
 
       <View style={{height:10}}></View>
-          <Link href={{ pathname: "" }} asChild>
+          <Link href={{ pathname: "(tabs)" }} asChild>
             <Pressable>
               <PrimaryButton title="Next" />
             </Pressable>

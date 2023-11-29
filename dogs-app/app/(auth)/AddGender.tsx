@@ -2,18 +2,15 @@ import {
   View,
   Text,
   StyleSheet,
-  Image,
   TextInput,
   Pressable,
-  TouchableOpacity,
   ScrollView,
 } from "react-native";
 
 import PrimaryButton from "../common/components/PrimaryButton";
 import { Link } from "expo-router";
-
 import colors from "../res/colors";
-const countries = ["Egypt", "Canada", "Australia", "Ireland"];
+
 export default function AdGender() {
   return (
     <View style={{ flex: 1 }}>

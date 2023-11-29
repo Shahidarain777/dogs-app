@@ -13,7 +13,6 @@ import colors from "../res/colors";
 import SelectDropdown from "react-native-select-dropdown";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import { Link } from "expo-router";
-import PrimaryButton from "../common/components/PrimaryButton";
 const countries = ["Egypt", "Canada", "Australia", "Ireland"];
 export default function Registration() {
   return (
@@ -122,14 +121,14 @@ export default function Registration() {
             </TouchableOpacity>
             <Text style={styles.of}> of </Text>
             <TouchableOpacity>
-              <Text style={styles.terms}>Terms of Service</Text>
+              <Text style={styles.terms}>Privacy policy</Text>
             </TouchableOpacity>
           </View>
 
           <View style={{ flexDirection: "row", marginTop: 50 }}>
             <Text style={styles.already}>Already have account? </Text>
             <TouchableOpacity>
-              <Text style={{ ...styles.terms, fontSize: 12 }}>Login</Text>
+              <Text style={{ ...styles.terms, fontSize: 12,justifyContent:'center' }}>Login</Text>
             </TouchableOpacity>
           </View>
         </View>

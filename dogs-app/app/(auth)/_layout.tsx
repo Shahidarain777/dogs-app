@@ -40,6 +40,7 @@ const StackLayout = () => {
       <Stack.Screen name="LogOut" options={{ headerShown: false }} />
       <Stack.Screen name="Setting" options={{ headerShown: false }} />
       <Stack.Screen name="DogBreed" options={{ headerShown: false }} />
+      <Stack.Screen name="Registration" options={{ headerShown: false }} />
       <Stack.Screen
         name="NotificationServicesSettings"
         options={{ headerShown: false }}

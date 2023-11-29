@@ -21,7 +21,7 @@ export default function NotificationServicesSettings() {
           paddingHorizontal: 30,
         }}
       >
-        <Link href={{ pathname: "AddOwner" }} asChild>
+        <Link href={{ pathname: "(tabs)" }} asChild>
           <Pressable>
             <Text
               style={{

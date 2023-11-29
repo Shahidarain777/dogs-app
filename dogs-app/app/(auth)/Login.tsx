@@ -112,17 +112,22 @@ export default function Login() {
           >
             Don’t have an account?
           </Text>
+          <Link href={{ pathname: "Registration" }} asChild>
+          <Pressable>
           <Text
             style={{
               fontSize: 12,
               fontWeight: "600",
               color: colors["brown.900"],
               fontFamily: "Unbounded",
+              justifyContent:'center'
             }}
           >
             {" "}
             Create
           </Text>
+          </Pressable>
+          </Link>
         </View>
       </ScrollView>
       <Image

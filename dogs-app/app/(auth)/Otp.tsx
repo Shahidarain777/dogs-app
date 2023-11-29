@@ -73,7 +73,7 @@ export default function Otp() {
           }}
         />
 
-        <Link href={{ pathname: "Login" }} asChild>
+        <Link href={{ pathname: "AddOwner" }} asChild>
           <Pressable>
             <PrimaryButton title="Confirm" />
           </Pressable>

@@ -3,7 +3,6 @@ import {
   Text,
   StyleSheet,
   Image,
-  TextInput,
   Pressable,
   TouchableOpacity,
   ScrollView,
@@ -11,9 +10,7 @@ import {
 
 import PrimaryButton from "../common/components/PrimaryButton";
 import { Link } from "expo-router";
-import FontAwesome from "react-native-vector-icons/FontAwesome";
 import colors from "../res/colors";
-const countries = ["Egypt", "Canada", "Australia", "Ireland"];
 export default function Perference() {
   return (
     <View style={{ flex: 1 }}>
@@ -62,7 +59,7 @@ export default function Perference() {
           </TouchableOpacity>
         </View>
 
-        <View style={{ flexDirection: "row", marginTop: 100 }}>
+        <View style={{ flexDirection: "row", marginTop: 70 }}>
           <TouchableOpacity
             style={{
               height: 150,
@@ -93,13 +90,15 @@ export default function Perference() {
           </TouchableOpacity>
         </View>
 
-        <Link href={{ pathname: "ProfileSetting" }} asChild>
+        <View style={{height:70}}></View>
+        <Link href={{ pathname: "NotificationServicesSettings" }} asChild>
           <Pressable>
             <PrimaryButton title="Next" />
           </Pressable>
         </Link>
       </ScrollView>
     </View>
+    
   );
 }
 

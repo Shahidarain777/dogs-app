@@ -2,21 +2,14 @@ import {
   View,
   Text,
   StyleSheet,
-  Image,
-  TextInput,
   Pressable,
-  TouchableOpacity,
   ScrollView,
 } from "react-native";
 
-import SelectDropdown from "react-native-select-dropdown";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import PrimaryButton from "../common/components/PrimaryButton";
 import { Link } from "expo-router";
-
 import colors from "../res/colors";
-import CodeInput from "react-native-confirmation-code-input";
-const countries = ["Egypt", "Canada", "Australia", "Ireland"];
 export default function AddPicture() {
   return (
     <View style={{ flex: 1 }}>

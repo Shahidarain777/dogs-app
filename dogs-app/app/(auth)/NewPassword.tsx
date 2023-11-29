@@ -89,7 +89,7 @@ export default function NewPassword() {
           </View>
         </View>
         <View style={{ height: 38 }}></View>
-        <Link href={{ pathname: "NotificationServicesSettings" }} asChild>
+        <Link href={{ pathname: "(tabs)" }} asChild>
           <Pressable>
             <PrimaryButton title="Submit" />
           </Pressable>

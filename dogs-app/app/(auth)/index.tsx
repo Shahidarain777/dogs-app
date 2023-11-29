@@ -1,16 +1,9 @@
 import {
-  View,
-  Text,
   StyleSheet,
-  Image,
-  TextInput,
-  Pressable,
-  TouchableOpacity,
   ScrollView,
 } from "react-native";
 import colors from "../res/colors";
 import Login from "./Login";
-import Registration from "./Registration";
 export default function App() {
   return (
     <ScrollView
