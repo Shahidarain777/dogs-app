@@ -14,13 +14,12 @@ import { Link } from "expo-router";
 
 import colors from "../res/colors";
 const countries = ["Egypt", "Canada", "Australia", "Ireland"];
-export default function Registration() {
+export default function AdGender() {
   return (
     <View style={{ flex: 1 }}>
       <ScrollView contentContainerStyle={styles.container}>
         <Text
           style={{
-            fontFamily: "Unbounded",
             fontSize: 24,
             color: colors["brown.900"],
             fontWeight: "600",
@@ -32,7 +31,6 @@ export default function Registration() {
 
         <Text
           style={{
-            fontFamily: "Unbounded",
             textAlign: "center",
             paddingHorizontal: 20,
             fontSize: 13,

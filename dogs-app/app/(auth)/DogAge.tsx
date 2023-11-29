@@ -13,7 +13,8 @@ import PrimaryButton from "../common/components/PrimaryButton";
 import { Link } from "expo-router";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import colors from "../res/colors";
-export default function Registration() {
+const countries = ["Egypt", "Canada", "Australia", "Ireland"];
+export default function DogAge() {
   return (
     <View style={{ flex: 1 }}>
       <ScrollView contentContainerStyle={styles.container}>

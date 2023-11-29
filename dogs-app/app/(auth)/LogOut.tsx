@@ -15,7 +15,7 @@ import {
   import colors from "../res/colors";
 import PrimaryButtonSquare from "../common/components/PrimaryButtonSquare";
   const countries = ["Egypt", "Canada", "Australia", "Ireland"];
-  export default function Registration() {
+  export default function LogOut() {
     return (
       
       <View style={{ flex: 1, }}>
