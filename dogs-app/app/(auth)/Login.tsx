@@ -31,17 +31,7 @@ export default function Login() {
           }}
           source={require("../res/images/pngs/footprint_small.png")}
         />
-        <Pressable onPress={() => router.back()}>
-          <Text
-            style={{
-              textAlign: "right",
-              fontSize: 15,
-              fontFamily: "Unbounded",
-            }}
-          >
-            Done
-          </Text>
-        </Pressable>
+
         <Text
           style={{
             fontSize: 24,
@@ -107,7 +97,7 @@ export default function Login() {
         </View>
         <View style={{ height: 38 }}></View>
         {/* <Link href="(tabs)"> */}
-        <Pressable onPress={() => router.push("(drawer)")}>
+        <Pressable onPress={() => router.push("(tabs)")}>
           <PrimaryButton title="Login" />
         </Pressable>
         {/* </Link> */}

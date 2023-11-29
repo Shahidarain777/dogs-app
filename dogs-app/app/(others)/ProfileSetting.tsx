@@ -9,30 +9,28 @@ import {
   ScrollView,
 } from "react-native";
 
-import PrimaryButton from "../../common/components/PrimaryButton";
-import { Link } from "expo-router";
+import PrimaryButton from "../common/components/PrimaryButton";
+import { Link, router } from "expo-router";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
-import colors from "../../res/colors";
+import colors from "../res/colors";
 const countries = ["Egypt", "Canada", "Australia", "Ireland"];
-export default function Registration() {
+export default function ProfileSetting() {
   return (
     <View style={{ flex: 1 }}>
       <ScrollView contentContainerStyle={styles.container}>
-        <Link href={{ pathname: "AddOwner" }} asChild>
-          <Pressable>
-            <Text
-              style={{
-                textAlign: "right",
-                fontSize: 15,
-                fontFamily: "Unbounded",
-                marginTop: 50,
-                marginRight: 230,
-              }}
-            >
-              Back
-            </Text>
-          </Pressable>
-        </Link>
+        <Pressable onPress={() => router.back()}>
+          <Text
+            style={{
+              textAlign: "right",
+              fontSize: 15,
+              fontFamily: "Unbounded",
+              marginTop: 50,
+              marginRight: 230,
+            }}
+          >
+            Back
+          </Text>
+        </Pressable>
 
         <View style={{ flexDirection: "row", marginTop: 20 }}>
           <View
@@ -48,7 +46,7 @@ export default function Registration() {
           >
             <Image
               style={{ marginTop: 0, height: 30, width: 30 }}
-              source={require("../../res/images/pngs/black-foot.png")}
+              source={require("../res/images/pngs/black-foot.png")}
             />
           </View>
 

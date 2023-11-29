@@ -17,13 +17,10 @@ const StackLayout = () => {
       }}
     >
       <Stack.Screen
-        name="Login2"
-        options={{ headerTitle: "Login", headerShown: false }}
-      />
-      <Stack.Screen
         name="ChangePassword"
         options={{ headerTitle: "Login", headerShown: false }}
       />
+      <Stack.Screen name="ProfileSetting" options={{ headerShown: false }} />
 
       {/* <Stack.Screen
         name="Otp"

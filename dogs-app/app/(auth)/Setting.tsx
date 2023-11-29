@@ -16,66 +16,76 @@ import colors from "../res/colors";
 const countries = ["Egypt", "Canada", "Australia", "Ireland"];
 export default function Registration() {
   return (
-    
-    <View style={{ flex: 1, }}>
-      
+    <View style={{ flex: 1 }}>
       <ScrollView contentContainerStyle={styles.container}>
-      <View style={{height:175,  backgroundColor: colors["brown.900"], width:350, marginTop:40}}>
-      <Link href={{ pathname: "AddOwner" }} asChild>
-        <Pressable>
-          <Text
-            style={{
-              textAlign:"right",
-              fontSize: 15,
-              fontFamily: "Unbounded",
-              marginTop:10,
-              marginRight:270,
-              color: colors["yellow.500"],
-            }}
-          >
-            Back
-          </Text>
-        </Pressable>
-      </Link>
+        <View
+          style={{
+            height: 175,
+            backgroundColor: colors["brown.900"],
+            width: 350,
+            marginTop: 40,
+          }}
+        >
+          <Link href={{ pathname: "AddOwner" }} asChild>
+            <Pressable>
+              <Text
+                style={{
+                  textAlign: "right",
+                  fontSize: 15,
+                  fontFamily: "Unbounded",
+                  marginTop: 10,
+                  marginRight: 270,
+                  color: colors["yellow.500"],
+                }}
+              >
+                Back
+              </Text>
+            </Pressable>
+          </Link>
 
-      <View style={{ flexDirection:'row', marginTop:20,}}>
-      <View style={{  backgroundColor: colors["yellow.500"],height:100,width:100,borderWidth:2,borderRadius:50,paddingTop:5,alignItems:'center',
-      marginLeft:50}}>
-      <Image
-      style={{marginTop:15 ,height:50,width:50,}}
-      source={require("../res/images/pngs/black-foot.png")}
-    />
-    </View>
+          <View style={{ flexDirection: "row", marginTop: 20 }}>
+            <View
+              style={{
+                backgroundColor: colors["yellow.500"],
+                height: 100,
+                width: 100,
+                borderWidth: 2,
+                borderRadius: 50,
+                paddingTop: 5,
+                alignItems: "center",
+                marginLeft: 50,
+              }}
+            >
+              <Image
+                style={{ marginTop: 15, height: 50, width: 50 }}
+                source={require("../res/images/pngs/black-foot.png")}
+              />
+            </View>
 
-    
-      <Text
-        style={{
-          fontSize:24,
-          color: colors["brown.900"],
-          fontWeight: "bold",
-          textAlign:'center',
-          marginTop:35,
-          marginLeft:10,
-          color: colors["yellow.500"],
-         
-          
-        }}
-      >
-     Settings
-      </Text>
-      
-      </View>
-      </View>
-      <Text
+            <Text
+              style={{
+                fontSize: 24,
+                fontWeight: "bold",
+                textAlign: "center",
+                marginTop: 35,
+                marginLeft: 10,
+                color: colors["yellow.500"],
+              }}
+            >
+              Settings
+            </Text>
+          </View>
+        </View>
+        <Text
           style={{
             fontSize: 16,
             color: colors["brown.900"],
             fontWeight: "600",
-           marginRight:150,
-            marginTop:90,
+            marginRight: 150,
+            marginTop: 90,
           }}
         >
-        Privacy policy
+          Privacy policy
         </Text>
 
         <View
@@ -93,7 +103,7 @@ export default function Registration() {
               padding: 10,
               color: colors["brown.900"],
               textAlign: "center",
-              marginTop:-10,
+              marginTop: -10,
             }}
           />
         </View>
@@ -103,11 +113,11 @@ export default function Registration() {
             fontSize: 16,
             color: colors["brown.900"],
             fontWeight: "600",
-           marginRight:170,
-            marginTop:70,
+            marginRight: 170,
+            marginTop: 70,
           }}
         >
-        Terms of use
+          Terms of use
         </Text>
 
         <View
@@ -125,11 +135,10 @@ export default function Registration() {
               padding: 10,
               color: colors["brown.900"],
               textAlign: "center",
-              marginTop:-10,
+              marginTop: -10,
             }}
           />
         </View>
-        
       </ScrollView>
     </View>
   );

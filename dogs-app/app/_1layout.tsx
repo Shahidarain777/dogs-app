@@ -15,12 +15,17 @@
 // } from "expo-router";
 
 import FontAwesome from "@expo/vector-icons/FontAwesome";
+import {
+  ThemeProvider,
+  DarkTheme,
+  DefaultTheme,
+} from "@react-navigation/native";
 import { useFonts } from "expo-font";
-import { SplashScreen } from "expo-router";
+import { SplashScreen, Stack } from "expo-router";
 import Drawer from "expo-router/drawer";
 import { useEffect } from "react";
-import { View } from "react-native";
-import DrawerMenu from "../../components/DrawerMenu";
+import { useColorScheme, View } from "react-native";
+import DrawerMenu from "../components/DrawerMenu";
 
 // export const unstable_settings = {
 //   // Ensure that reloading on `/modal` keeps a back button present.
@@ -70,9 +75,10 @@ import DrawerMenu from "../../components/DrawerMenu";
 // }
 
 export default function DrawerLayout() {
+  const colorScheme = useColorScheme();
   const [loaded, error] = useFonts({
-    SpaceMono: require("../../assets/fonts/SpaceMono-Regular.ttf"),
-    Unbounded: require("../../assets/fonts/Unbounded-VariableFont_wght.ttf"),
+    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
+    Unbounded: require("../assets/fonts/Unbounded-VariableFont_wght.ttf"),
     ...FontAwesome.font,
   });
 
@@ -90,18 +96,21 @@ export default function DrawerLayout() {
   if (!loaded) {
     return null;
   }
+
   return (
+    // <Stack>
+    //   <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+    // </Stack>
     <Drawer
       drawerContent={() => <DrawerMenu />}
-      screenOptions={{ headerShown: false, swipeEdgeWidth: 5 }}
+      screenOptions={{
+        swipeEnabled: false,
+        headerShown: false,
+        swipeEdgeWidth: 0,
+      }}
     >
-      <Drawer.Screen
-        name="(tabs)"
-        options={{
-          drawerLabel: "Homeee",
-          title: "Hoeeme",
-        }}
-      />
+      <Drawer.Screen name="(auth)" />
+      {/* <Drawer.Screen name="(drawer)" /> */}
       {/* /// new code below /// */}
     </Drawer>
   );

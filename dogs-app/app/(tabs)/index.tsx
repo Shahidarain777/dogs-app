@@ -1,9 +1,7 @@
 import { router } from "expo-router";
-import { StyleSheet, Image, ScrollView } from "react-native";
+import { StyleSheet, Image, ScrollView, View, Text } from "react-native";
 
-import EditScreenInfo from "../../../components/EditScreenInfo";
-import { Text, View } from "../../../components/Themed";
-import colors from "../../res/colors";
+import colors from "../res/colors";
 
 export default function Home() {
   const Row = ({ image, text }: any) => (
@@ -55,22 +53,19 @@ export default function Home() {
             elevation: 5,
           }}
         >
-          <Image source={require("../../res/images/bhairavan_logo.png")} />
+          <Image source={require("../res/images/bhairavan_logo.png")} />
           <Text
             style={{ fontFamily: "Unbounded", fontSize: 20, fontWeight: "700" }}
           >
             BHAIRAVAN
           </Text>
         </View>
+        <Row image={require("../res/images/pngs/heart.png")} text={"Likes"} />
         <Row
-          image={require("../../res/images/pngs/heart.png")}
-          text={"Likes"}
-        />
-        <Row
-          image={require("../../res/images/pngs/matches.png")}
+          image={require("../res/images/pngs/matches.png")}
           text={"Matches"}
         />
-        <Row image={require("../../res/images/pngs/chat.png")} text={"Chats"} />
+        <Row image={require("../res/images/pngs/chat.png")} text={"Chats"} />
       </ScrollView>
     </View>
   );

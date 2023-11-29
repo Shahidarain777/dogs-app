@@ -70,8 +70,8 @@ export default function ProfileModal({ visible, onCancel }: Props) {
             borderWidth: 4,
           }}
         >
-          <Link href="/modal" asChild>
-            <Pressable>
+          <Link href="ProfileSetting" asChild>
+            <Pressable onPress={onCancel}>
               <Row icon={"user-circle-o"} text={"Profile Settings"} />
             </Pressable>
           </Link>
@@ -84,7 +84,7 @@ export default function ProfileModal({ visible, onCancel }: Props) {
           <Pressable
             onPress={() => {
               onCancel();
-              router.replace("Login");
+              router.replace("/");
             }}
           >
             <Row icon={"power-off"} text={"Logout"} />

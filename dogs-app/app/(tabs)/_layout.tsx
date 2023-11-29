@@ -9,8 +9,8 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { DrawerToggleButton } from "@react-navigation/drawer";
-import colors from "../../res/colors";
-import ProfileModal from "../../../components/ProfileModel";
+import colors from "../res/colors";
+import ProfileModal from "../../components/ProfileModel";
 import { useState } from "react";
 
 /**
@@ -69,7 +69,7 @@ export default function TabLayout() {
               >
                 <Image
                   style={{ marginTop: 0, height: 22, width: 22 }}
-                  source={require("../../res/images/pngs/black-foot.png")}
+                  source={require("../res/images/pngs/black-foot.png")}
                 />
               </View>
               <Text

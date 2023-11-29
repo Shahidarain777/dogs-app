@@ -9,9 +9,9 @@ import {
   Pressable,
 } from "react-native";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
-import NewPassword from "../../(auth)/NewPassword";
-import PrimaryButton from "../../common/components/PrimaryButton";
-import colors from "../../res/colors";
+import NewPassword from "../(auth)/NewPassword";
+import PrimaryButton from "../common/components/PrimaryButton";
+import colors from "../res/colors";
 
 export default function ChangePassword() {
   const [passwordHidden, setPasswordHidden] = useState(true);

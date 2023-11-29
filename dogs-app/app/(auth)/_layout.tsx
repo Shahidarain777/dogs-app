@@ -36,9 +36,6 @@ const StackLayout = () => {
       <Stack.Screen name="AddGender" options={{ headerShown: false }} />
       <Stack.Screen name="DogAge" options={{ headerShown: false }} />
       <Stack.Screen name="Perference" options={{ headerShown: false }} />
-      {/* <Stack.Screen name="ProfileSetting" options={{ headerShown: false }} /> */}
-
-      {/* <Stack.Screen name="ProfileSetting" options={{ headerShown: false }} /> */}
       <Stack.Screen name="ChangePassword" options={{ headerShown: false }} />
       <Stack.Screen name="LogOut" options={{ headerShown: false }} />
       <Stack.Screen name="Setting" options={{ headerShown: false }} />
