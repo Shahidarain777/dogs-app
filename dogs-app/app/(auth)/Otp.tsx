@@ -79,7 +79,14 @@ export default function Otp() {
           </Pressable>
         </Link>
 
-        <View style={{ flexDirection: "row", padding: 16 }}>
+        <View
+          style={{
+            flexDirection: "row",
+            padding: 16,
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <Text
             style={{
               fontSize: 12,

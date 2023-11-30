@@ -6,6 +6,8 @@ import colors from "../res/colors";
 export default function NotificationServicesSettings() {
   const [isEnabled, setIsEnabled] = useState(false);
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
+  const [isEnabledd, setIsEnabledd] = useState(false);
+  const toggleSwitchh = () => setIsEnabledd((previousState) => !previousState);
   return (
     <ScrollView
       contentContainerStyle={{
@@ -122,10 +124,10 @@ export default function NotificationServicesSettings() {
             false: colors["brown.200"],
             true: colors["brown.900"],
           }}
-          thumbColor={isEnabled ? colors["yellow.500"] : "#FFF"}
+          thumbColor={isEnabledd ? colors["yellow.500"] : "#FFF"}
           ios_backgroundColor={colors["brown.200"]}
-          onValueChange={toggleSwitch}
-          value={isEnabled}
+          onValueChange={toggleSwitchh}
+          value={isEnabledd}
         />
       </View>
 

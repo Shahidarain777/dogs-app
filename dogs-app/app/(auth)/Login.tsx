@@ -96,12 +96,19 @@ export default function Login() {
           </Link>
         </View>
         <View style={{ height: 38 }}></View>
-        {/* <Link href="(tabs)"> */}
-        <Pressable onPress={() => router.push("(tabs)")}>
-          <PrimaryButton title="Login" />
-        </Pressable>
-        {/* </Link> */}
-        <View style={{ flexDirection: "row", padding: 16 }}>
+        <Link href="(tabs)" asChild>
+          <Pressable>
+            <PrimaryButton title="Login" />
+          </Pressable>
+        </Link>
+        <View
+          style={{
+            flexDirection: "row",
+            padding: 16,
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <Text
             style={{
               fontSize: 12,
@@ -113,20 +120,20 @@ export default function Login() {
             Don’t have an account?
           </Text>
           <Link href={{ pathname: "Registration" }} asChild>
-          <Pressable>
-          <Text
-            style={{
-              fontSize: 12,
-              fontWeight: "600",
-              color: colors["brown.900"],
-              fontFamily: "Unbounded",
-              justifyContent:'center'
-            }}
-          >
-            {" "}
-            Create
-          </Text>
-          </Pressable>
+            <Pressable>
+              <Text
+                style={{
+                  fontSize: 12,
+                  fontWeight: "800",
+                  color: colors["brown.900"],
+                  fontFamily: "Unbounded",
+                  justifyContent: "center",
+                }}
+              >
+                {" "}
+                Create
+              </Text>
+            </Pressable>
           </Link>
         </View>
       </ScrollView>

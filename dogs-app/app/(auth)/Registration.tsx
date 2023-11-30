@@ -125,10 +125,26 @@ export default function Registration() {
             </TouchableOpacity>
           </View>
 
-          <View style={{ flexDirection: "row", marginTop: 50 }}>
+          <View
+            style={{
+              flexDirection: "row",
+              marginTop: 50,
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <Text style={styles.already}>Already have account? </Text>
             <TouchableOpacity>
-              <Text style={{ ...styles.terms, fontSize: 12,justifyContent:'center' }}>Login</Text>
+              <Text
+                style={{
+                  ...styles.terms,
+                  fontSize: 12,
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                Login
+              </Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -192,23 +208,27 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     paddingBottom: 4,
     fontFamily: "Unbounded",
+    justifyContent: "center",
   },
   already: {
     fontSize: 13,
     color: colors["yellow.200"],
     fontWeight: "500",
     fontFamily: "Unbounded",
+    justifyContent: "center",
   },
   terms: {
     fontSize: 10,
     fontWeight: "700",
     color: colors["yellow.500"],
     fontFamily: "Unbounded",
+    justifyContent: "center",
   },
   of: {
     fontSize: 10,
     fontWeight: "400",
     color: colors["yellow.200"],
     fontFamily: "Unbounded",
+    justifyContent: "center",
   },
 });

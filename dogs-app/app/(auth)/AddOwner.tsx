@@ -97,7 +97,7 @@ export default function AddOwner() {
         </Link>
 
         <View style={{ height: 20 }}></View>
-        <Link href={{ pathname: "DogBreed" }} asChild>
+        <Link href={{ pathname: "Perference" }} asChild>
           <Pressable>
             <PrimaryButton title="Don't have a dog" />
           </Pressable>
